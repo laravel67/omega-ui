@@ -8,14 +8,14 @@
   --background-color: #ffffff; 
   --default-color: #444444; 
   --heading-color: #5f687b; 
-  --accent-color: #099f25; 
+  --accent-color: #1cc2ff; 
   --surface-color: #ffffff; 
   --contrast-color: #ffffff; 
 }
 
 :root {
   --nav-color: #5f687b;  
-  --nav-hover-color: #09ff4b; 
+  --nav-hover-color: #5c82ff; 
   --nav-mobile-background-color: #ffffff; 
   --nav-dropdown-background-color: #ffffff; 
   --nav-dropdown-color: #5f687b;
@@ -36,7 +36,7 @@
   --contrast-color: #ffffff;
 } 
 .accent-background {
-  --background-color: #2dae49;
+  --background-color: #096bff;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #096bff
@@ -213,8 +213,8 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  color: var(--default-color);
-  background-color: #39ff3f;
+  color: var(--contrast-color);
+  background-color: #00bbf4;
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -233,7 +233,7 @@ h6 {
   font-size: 30px;
   margin: 0;
   font-weight: 700;
-  color: var(--heading-color);
+  color: var(--contrast-color);
 }
 
 .header .btn-getstarted,
@@ -272,7 +272,20 @@ h6 {
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
   background-color: var(--contrast-color);
+  color: #00bbf4;
 }
+
+.scrolled .navmenu a,
+.scrolled .header .logo h1 {
+  color: #00bbf4;
+}
+
+.scrolled .navmenu a:hover,
+.scrolled .navmenu a.active,
+.scrolled .navmenu a:focus {
+  color: #060606;
+}
+
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -297,7 +310,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: var(--contrast-color);
     padding: 18px 15px;
     font-size: 16px;
     font-family: var(--nav-font);
@@ -324,7 +337,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: #060606;
   }
 
   .navmenu .dropdown ul {
@@ -515,65 +528,13 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: var(--contrast-color);
+  background-color:#000832;
   font-size: 14px;
   position: relative;
 }
 
-.footer .footer-newsletter {
-  background-color: color-mix(in srgb, var(--default-color), transparent 97%);
-  padding: 50px 0;
-}
 
-.footer .footer-newsletter h4 {
-  font-size: 24px;
-}
-
-.footer .footer-newsletter .newsletter-form {
-  margin-top: 30px;
-  margin-bottom: 15px;
-  padding: 6px 8px;
-  position: relative;
-  border-radius: 4px;
-  background-color: var(--surface-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-  display: flex;
-  transition: 0.3s;
-  border-radius: 50px;
-}
-
-.footer .footer-newsletter .newsletter-form:focus-within {
-  border-color: var(--accent-color);
-}
-
-.footer .footer-newsletter .newsletter-form input[type=email] {
-  border: 0;
-  padding: 4px;
-  width: 100%;
-  background-color: var(--surface-color);
-  color: var(--default-color);
-}
-
-.footer .footer-newsletter .newsletter-form input[type=email]:focus-visible {
-  outline: none;
-}
-
-.footer .footer-newsletter .newsletter-form input[type=submit] {
-  border: 0;
-  font-size: 16px;
-  padding: 0 20px;
-  margin: -7px -8px -7px 0;
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  transition: 0.3s;
-  border-radius: 50px;
-}
-
-.footer .footer-newsletter .newsletter-form input[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
-}
 
 .footer .footer-top {
   padding-top: 50px;
@@ -586,9 +547,9 @@ h6 {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
+  border: 1px solid color-mix(in srgb, var(--contrast-color), transparent 50%);
   font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
   margin-right: 10px;
   transition: 0.3s;
 }
@@ -603,6 +564,7 @@ h6 {
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
+  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
 }
 
 .footer .footer-links {
@@ -619,7 +581,7 @@ h6 {
   margin-right: 3px;
   font-size: 12px;
   line-height: 0;
-  color: var(--accent-color);
+  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
 }
 
 .footer .footer-links ul li {
@@ -634,7 +596,7 @@ h6 {
 
 .footer .footer-links ul a {
   display: inline-block;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--contrast-color), transparent 20%);
   line-height: 1;
 }
 
@@ -643,7 +605,7 @@ h6 {
 }
 
 .footer .footer-about a {
-  color: var(--heading-color);
+  color: var(--contrast-color);
   font-size: 24px;
   font-weight: 600;
   font-family: var(--heading-font);
@@ -655,7 +617,7 @@ h6 {
 
 .footer .copyright {
   padding: 25px 0;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid color-mix(in srgb, var(--contrast-color), transparent 90%);
 }
 
 .footer .copyright p {
@@ -857,11 +819,12 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 80vh;
+  min-height: 10vh;
   position: relative;
-  padding: 120px 0 60px 0;
+  padding: 10px 0 10px 0;
   display: flex;
-  background-color: #39ff3f;
+  background-color: #00bbf4;
+  margin-bottom: 0px;
 }
 
 .hero h1 {
@@ -870,25 +833,47 @@ section,
   font-size: 4rem;
   font-weight: 700;
   line-height: 56px;
+  margin-bottom: 2rem;
 }
 
 .hero p {
   color: color-mix(in srgb, var(--default-color), transparent 0%);
   /* color: var(--contrast-color); */
-  margin: 5px 0 30px 0;
-  font-size: 24px;
+  margin: 5px 0 15px 0;
+  font-size: 28px;
   font-weight: 400;
 }
 
-.hero .btn-get-started {
+
+.hero ul li{
+  list-style: none;
+  margin-bottom: 0.2rem;
+  text-align: start;
+}
+
+.hero ul li span{
   color: var(--contrast-color);
-  background: var(--accent-color);
+  font-size: 18px;
+  font-weight:700;
+}
+
+.hero ul li span .bi-chevron-right {
+  color: var(--contrast-color);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hero .btn-get-started {
+  color: #00bbf4;
+  background: var(--contrast-color);
   font-family: var(--heading-font);
-  font-weight: 400;
-  font-size: 15px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 28px 12px 28px;
+  padding: 15px 30px 12px 28px;
   border-radius: 50px;
   transition: 0.5s;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
@@ -896,7 +881,7 @@ section,
 
 .hero .btn-get-started:hover {
   color: var(--contrast-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 15%);
+  background: color-mix(in srgb, #00bbf4, transparent 15%);
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
 }
 
@@ -930,11 +915,12 @@ section,
 
 @media (max-width: 640px) {
   .hero{
-    padding: 10px 0 60px 0;
+    padding: 40px 0 80px 0;
+    bottom: 0%;
   }
   .hero h1 {
     font-size: 28px;
-    line-height: 36px;
+    line-height: 12px;
     text-align: center;
   }
 
@@ -942,8 +928,30 @@ section,
     text-align: center;
     font-size: 14px;
     line-height: 24px;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
   }
+
+
+  .hero ul{
+    margin-bottom: 3rem;
+  }
+    .hero ul li {
+      list-style: none;
+      margin-bottom: 0.4rem;
+      text-align: start;
+    }
+  
+    .hero ul li span {
+      color: var(--contrast-color);
+      font-size: 13px;
+      font-weight: 400;
+    }
+  
+    .hero ul li span .bi-chevron-right {
+      color: var(--contrast-color);
+      font-size: 18px;
+      font-weight: bold;
+    }
 
   .hero .btn-get-started,
   .hero .btn-watch-video {
@@ -1750,6 +1758,43 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+.wa-float {
+  position: fixed;
+  bottom: 80px;
+  right: 15px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background-color: #25D366;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.wa-float:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.wa-icon {
+  width: 40px;
+  height: 40px;
+  margin: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .wa-float {
+    width: 50px;
+    height: 50px;
+  }
+
+  .wa-icon {
+    width: 30px;
+    height: 30px;
+  }
 }
