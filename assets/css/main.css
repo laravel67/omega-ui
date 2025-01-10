@@ -8,14 +8,14 @@
   --background-color: #ffffff; 
   --default-color: #444444; 
   --heading-color: #5f687b; 
-  --accent-color: #096bff; 
+  --accent-color: #099f25; 
   --surface-color: #ffffff; 
   --contrast-color: #ffffff; 
 }
 
 :root {
   --nav-color: #5f687b;  
-  --nav-hover-color: #096bff; 
+  --nav-hover-color: #09ff4b; 
   --nav-mobile-background-color: #ffffff; 
   --nav-dropdown-background-color: #ffffff; 
   --nav-dropdown-color: #5f687b;
@@ -34,10 +34,9 @@
   --heading-color: #ffffff;
   --surface-color: #252525;
   --contrast-color: #ffffff;
-}
-
+} 
 .accent-background {
-  --background-color: #096bff;
+  --background-color: #2dae49;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #096bff
@@ -215,7 +214,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #39ff3f;
   padding: 15px 0;
   transition: all 0.5s;
   z-index: 997;
@@ -272,6 +271,7 @@ h6 {
 
 .scrolled .header {
   box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+  background-color: var(--contrast-color);
 }
 
 /*--------------------------------------------------------------
@@ -861,30 +861,22 @@ section,
   position: relative;
   padding: 120px 0 60px 0;
   display: flex;
-  align-items: center;
-  background: linear-gradient(to bottom,
-        rgba(255, 255, 255, 0.72),
-        /* Warna di bagian atas */
-        rgba(4, 60, 192, 0.558)
-        /* Warna transparan di bagian bawah */
-      ),
-      url('../img/banner-hero.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #39ff3f;
 }
 
 .hero h1 {
+  color: var(--contrast-color);
   margin: 0;
-  font-size: 48px;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 56px;
 }
 
 .hero p {
-  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  color: color-mix(in srgb, var(--default-color), transparent 0%);
+  /* color: var(--contrast-color); */
   margin: 5px 0 30px 0;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
 }
 
@@ -937,20 +929,33 @@ section,
 }
 
 @media (max-width: 640px) {
+  .hero{
+    padding: 10px 0 60px 0;
+  }
   .hero h1 {
     font-size: 28px;
     line-height: 36px;
+    text-align: center;
   }
 
   .hero p {
-    font-size: 18px;
+    text-align: center;
+    font-size: 14px;
     line-height: 24px;
     margin-bottom: 30px;
   }
 
   .hero .btn-get-started,
   .hero .btn-watch-video {
-    font-size: 13px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .hero-img{
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
