@@ -24,11 +24,8 @@
 
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
       <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/logo.png" alt="">
-        <!-- <h1 class="sitename">OMINSTEK</h1> -->
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -38,30 +35,11 @@
           <li><a href="#services">Layanan</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
-          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li> -->
+         
           <li><a href="#contact">Kontak</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <!-- <a class="btn-getstarted" href="index.html#about">Get Started</a> -->
-
     </div>
   </header>
 
@@ -710,7 +688,29 @@
     <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" class="wa-icon">
   </a>
 
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <section class="menu_navigation d-md-none">
+    <div class="container-fluid">
+      <div class="d-flex text-center">
+        <!-- Ulangi blok berikut untuk setiap menu -->
+        <a href="#" class="col item-menu active">
+          <i class="icon bi bi-house my-0"></i>
+          <div class="label my-0">Home</div>
+        </a>
+        <a href="#services" class="col item-menu">
+          <i class="icon bi bi-ui-checks-grid"></i>
+          <div class="label my-0">Layanan</div>
+        </a>
+        <a href="#about" class="col item-menu">
+          <div class="icon bi bi-info-circle my-0"></div>
+          <div class="label my-0">Layanan</div>
+        </a>
+        <!-- Tambahkan menu lain sesuai kebutuhan -->
+      </div>
+    </div>
+  </section>
+
+
+  <a href="#" id="scroll-top" class="scroll-top d-none d-md-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
   <div id="preloader"></div>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
