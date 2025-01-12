@@ -488,8 +488,9 @@ section, .section {
 
 .hero ul li span {
     color: var(--contrast-color);
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 4rem;
 }
 
 .hero ul li span .bi-chevron-right {
@@ -565,6 +566,7 @@ section, .section {
         font-size: 14px;
         line-height: 24px;
         margin-bottom: 5px;
+        font-weight: 600;
     }
 
 
@@ -581,12 +583,13 @@ section, .section {
     .hero ul li span {
         color: var(--contrast-color);
         font-size: 13px;
-        font-weight: 400;
+        font-weight: 500;
+        line-height: 2rem;
     }
 
     .hero ul li span .bi-chevron-right {
         color: var(--contrast-color);
-        font-size: 18px;
+        font-size: 13px;
         font-weight: bold;
     }
 

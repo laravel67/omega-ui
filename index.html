@@ -71,9 +71,9 @@
 
       <div class="container">
         <div class="row gy-3 justify-content-center">
-          <div class="col-lg-6 order-2 order-lg-1 text-center" data-aos="fade-up">
+          <div class="col-lg-8 order-2 order-lg-1 text-center" data-aos="fade-up">
             <h1>OMEGA INSIGHTEK</h1>
-            <p>Solusi Teknologi untuk Masa Depan Anda</p>
+            <p class="type-effect"></p>
             <ul>
               <li>
                 <span> <i class="bi bi-chevron-right"></i> Pembuatan Website profesional</span>
@@ -92,7 +92,7 @@
               </li>
             </ul>
             <div class="d-flex">
-              <a href="https://wa.me/6285129832446" class="btn-get-started">Hubungi Kami</a>
+              <a href="https://wa.me/6285129832446" class="btn-get-started d-none d-md-block d-lg-block">Hubungi Kami</a>
               <!-- <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a> -->
             </div>
           </div>
@@ -291,38 +291,32 @@
   
         <!-- Content Section -->
         <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
-          <h3>OMEGA INSIGHTEK - Solusi Teknologi Terpercaya Anda</h3>
+          <!-- <h3>OMEGA INSIGHTEK - Solusi Teknologi Terpercaya Anda</h3> -->
           <p class="fst-italic">
-            OMEGA INSIGHTEK adalah perusahaan yang bergerak di bidang teknologi, menghadirkan solusi terbaik untuk
-            mendukung kebutuhan modern di era digital. Dengan pengalaman dan dedikasi, kami menyediakan layanan yang
-            dirancang untuk mempermudah dan meningkatkan kualitas hidup serta bisnis Anda.
+            OMEGA INSIGHTEK menghadirkan inovasi teknologi untuk mendukung bisnis dan kehidupan Anda di era digital.
           </p>
           <h4>Visi Kami</h4>
           <p>
-            Menjadi pelopor inovasi teknologi yang memberikan solusi terbaik dan terpercaya untuk kebutuhan bisnis dan
-            personal di Indonesia.
+            Menjadi pelopor inovasi teknologi terpercaya di Indonesia.
           </p>
           <h4>Misi Kami</h4>
           <ul>
-            <li><i class="bi bi-check2-all"></i> <span>Menawarkan layanan pembuatan website profesional yang modern dan
-                responsif.</span></li>
-            <li><i class="bi bi-check2-all"></i> <span>Menyediakan pengadaan perangkat keras seperti komputer, laptop,
-                printer, dan layanan servis.</span></li>
-            <li><i class="bi bi-check2-all"></i> <span>Memberikan instalasi jaringan internet yang cepat dan
-                stabil.</span></li>
-            <li><i class="bi bi-check2-all"></i> <span>Memasang sistem CCTV berkualitas tinggi untuk keamanan properti
-                Anda.</span></li>
-            <li><i class="bi bi-check2-all"></i> <span>Menyediakan layanan percetakan yang efisien dan berkualitas.</span>
-            </li>
+            <li><i class="bi bi-check2-all"></i> Pembuatan website modern dan responsif.</li>
+            <li><i class="bi bi-check2-all"></i> Pengadaan perangkat keras dan layanan servis.</li>
+            <li><i class="bi bi-check2-all"></i> Instalasi jaringan internet yang stabil.</li>
+            <li><i class="bi bi-check2-all"></i> Sistem CCTV berkualitas tinggi.</li>
+            <li><i class="bi bi-check2-all"></i> Layanan percetakan efisien.</li>
           </ul>
           <p>
-            Dengan komitmen terhadap inovasi dan kepuasan pelanggan, OMEGA INSIGHTEK hadir sebagai mitra teknologi
-            terpercaya Anda. Hubungi kami untuk solusi teknologi terbaik!
+            Hubungi kami untuk solusi teknologi terbaik!
           </p>
         </div>
       </div>
     </div>
   </section>
+
+ 
+
   
  
 
@@ -631,6 +625,18 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/type.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      new TypeIt(".type-effect", {
+        strings: ["Solusi Teknologi untuk Masa Depan Anda !"],
+        loop: true, 
+      }).go();
+    });
+  </script>
+
+
 </body>
 
 </html>
